@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ASKURL",
+  "version": "1.0",
+  "description": "Opens a sidebar with a chatbot that can answer questions about the current page.",
+  "permissions": ["tabs", "sidePanel"],
+  "host_permissions": ["*://*/*"],
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to open sidebar"
+  }
+}

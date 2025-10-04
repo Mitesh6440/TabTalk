@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  background-color: #ffe6f0;
+  color: #4d004d;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+#send-url-button {
+  padding: 8px 12px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  height: fit-content;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+#send-url-button:hover {
+  background-color: #ff3399;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-top: 1px solid #ffb3d9;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+#chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  max-height: 70vh;
+  padding-right: 5px;
+}
+
+.message {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #ffb3d9;
+  align-self: flex-end;
+  margin-left: auto;
+  color: #4d004d;
+}
+
+.bot-message {
+  background-color: #ffd9ec;
+  align-self: flex-start;
+  color: #4d004d;
+}
+
+.input-container {
+  display: flex;
+  margin-top: auto;
+  gap: 5px;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ffb3d9;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+#send-button {
+  padding: 10px 16px;
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+  background-color: #ff3399;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 500px;
+  }
+  #send-url-button, #send-button {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+  .message {
+    padding: 12px 16px;
+    border-radius: 18px;
+  }
+}
