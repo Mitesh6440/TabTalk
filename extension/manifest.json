@@ -1,8 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "ASKURL",
+  "name": "TabTalk",
   "version": "1.0",
   "description": "Opens a sidebar with a chatbot that can answer questions about the current page.",
+  "icons": {
+    "16": "icons/TabTalk.png",
+    "48": "icons/TabTalk.png",
+    "128": "icons/TabTalk.png"
+  },
+  "action": {
+    "default_title": "Click to open sidebar",
+    "default_icon": {
+      "16": "icons/TabTalk.png",
+      "48": "icons/TabTalk.png",
+      "128": "icons/TabTalk.png"
+    }
+  },
   "permissions": ["tabs", "sidePanel"],
   "host_permissions": ["*://*/*"],
   "side_panel": {
@@ -10,8 +23,5 @@
   },
   "background": {
     "service_worker": "background.js"
-  },
-  "action": {
-    "default_title": "Click to open sidebar"
   }
 }
